@@ -27,7 +27,8 @@ This tool parses a GoWitness SQLite database and cross-references HTML content f
 
 - - All strings must match for the full value after the pipe (`|`) to be recorded in the **Default Credentials** column.
 
-## snag files
+## categoriy and creds/signatures files
+You can make your own, or rely on work done with the eyewitness project to get you started quickly
 ```bash
 wget https://raw.githubusercontent.com/RedSiege/EyeWitness/refs/heads/master/Python/signatures.txt
 wget https://raw.githubusercontent.com/RedSiege/EyeWitness/refs/heads/master/Python/categories.txt
