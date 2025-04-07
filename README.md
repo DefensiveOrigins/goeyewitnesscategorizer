@@ -19,4 +19,36 @@ This tool parses a GoWitness SQLite database and cross-references HTML content f
 - Must contain a `results` table with `url`, `title`, and `html` columns
 
 ### 2. `categories.txt`
-- Format:  
+- Format:  ```string1;string2;...|CategoryName```
+- All strings must appear in the HTML for the category to be assigned.
+
+### 3. `signatures.txt`
+- Format:  ```string1;string2;...|username:password or other default cred format```
+
+- - All strings must match for the full value after the pipe (`|`) to be recorded in the **Default Credentials** column.
+
+## 📤 Output
+
+- CSV report (default: `gowitness_report.csv`) with the following columns:
+- `URL`
+- `Title`
+- `Category`
+- `Default Credentials`
+
+## 🚀 Usage
+
+```bash
+python goeyewitnesscategorizer.py \
+--db gowitness.sqlite \
+--categories categories.txt \
+--creds signatures.txt \
+--output output_report.csv
+```
+
+## Requirements
+* Python 3.7+
+*  pandas
+
+### Install Requirements 
+*  pip install pandas
+
