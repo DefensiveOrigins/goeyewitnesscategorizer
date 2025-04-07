@@ -30,7 +30,7 @@ This tool parses a GoWitness SQLite database and cross-references HTML content f
 ## snag files
 ```bash
 wget https://raw.githubusercontent.com/RedSiege/EyeWitness/refs/heads/master/Python/signatures.txt
-wget https://github.com/RedSiege/EyeWitness/blob/master/Python/categories.txt
+wget https://raw.githubusercontent.com/RedSiege/EyeWitness/refs/heads/master/Python/categories.txt
 ```
 
 ## 📤 Output
