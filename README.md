@@ -12,6 +12,12 @@ This tool parses a GoWitness SQLite database and cross-references HTML content f
 - Output a clean, filterable **CSV report**.
 - CLI-driven with clear arguments.
 
+## Install via PIP
+```
+pip install goeyewitnesscategorizer
+# then use "goeyewitnesscategorizer"
+```
+
 ## 🗃️ Input Files
 
 ### 1. GoWitness SQLite DB
@@ -46,6 +52,13 @@ wget https://raw.githubusercontent.com/RedSiege/EyeWitness/refs/heads/master/Pyt
 
 ```bash
 python goeyewitnesscategorizer.py \
+--db gowitness.sqlite \
+--categories categories.txt \
+--creds signatures.txt \
+--output output_report.csv
+
+# OR with pip
+goeyewitnesscategorizer \
 --db gowitness.sqlite \
 --categories categories.txt \
 --creds signatures.txt \
