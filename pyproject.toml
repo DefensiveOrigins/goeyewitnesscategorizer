@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "goeyewitnesscategorizer"
-version = "0.1.1"
+version = "0.1.2"
 description = "Parse GoWitness SQLite results and categorize HTML using EyeWitness-style signatures to produce a CSV report."
 readme = "README.md"
 requires-python = ">=3.8"
