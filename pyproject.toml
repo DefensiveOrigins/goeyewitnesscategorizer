@@ -1,43 +1,19 @@
 [build-system]
-requires = ["hatchling>=1.25"]
+requires = [ "hatchling>=1.25",]
 build-backend = "hatchling.build"
 
 [project]
 name = "goeyewitnesscategorizer"
-version = "0.1.0"
+version = "0.1.1"
 description = "Parse GoWitness SQLite results and categorize HTML using EyeWitness-style signatures to produce a CSV report."
 readme = "README.md"
 requires-python = ">=3.8"
-authors = [
-  { name = "Defensive Origins", email = "info@defensiveorigins.com" },
-]
-keywords = [
-  "security",
-  "reconnaissance",
-  "gowitness",
-  "eyewitness",
-  "categorization",
-  "web",
-]
-classifiers = [
-  "Programming Language :: Python :: 3",
-  "Programming Language :: Python :: 3 :: Only",
-  "Programming Language :: Python :: 3.8",
-  "Programming Language :: Python :: 3.9",
-  "Programming Language :: Python :: 3.10",
-  "Programming Language :: Python :: 3.11",
-  "Programming Language :: Python :: 3.12",
-  "Intended Audience :: Information Technology",
-  "Intended Audience :: System Administrators",
-  "Topic :: Security",
-  "Topic :: Internet :: WWW/HTTP",
-  "Environment :: Console",
-  "License :: OSI Approved :: MIT License",
-]
-
-dependencies = [
-  "pandas>=1.0",
-]
+keywords = [ "security", "reconnaissance", "gowitness", "eyewitness", "categorization", "web",]
+classifiers = [ "Programming Language :: Python :: 3", "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Intended Audience :: Information Technology", "Intended Audience :: System Administrators", "Topic :: Security", "Topic :: Internet :: WWW/HTTP", "Environment :: Console", "License :: OSI Approved :: MIT License",]
+dependencies = [ "pandas>=1.0",]
+[[project.authors]]
+name = "Defensive Origins"
+email = "info@defensiveorigins.com"
 
 [project.scripts]
 goeyewitnesscategorizer = "goeyewitnesscategorizer:main"
@@ -45,11 +21,7 @@ goeyewitnesscategorizer = "goeyewitnesscategorizer:main"
 [project.urls]
 Homepage = "https://github.com/DefensiveOrigins/goeyewitnesscategorizer"
 Source = "https://github.com/DefensiveOrigins/goeyewitnesscategorizer"
-"Issues" = "https://github.com/DefensiveOrigins/goeyewitnesscategorizer/issues"
+Issues = "https://github.com/DefensiveOrigins/goeyewitnesscategorizer/issues"
 
 [tool.hatch.build]
-# Single-module layout: explicitly ship this file.
-include = [
-  "goeyewitnesscategorizer.py",
-  "README.md",
-]
+include = [ "goeyewitnesscategorizer.py", "README.md",]
